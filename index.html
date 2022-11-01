@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo 6 Campaña antiestres</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">ESTRÉS</a>
+      <ul class="navigation">
+        <li><a href="index.html" class="active">Estrés</a></li>
+        <li><a href="web2.html">Causas del estres</a></li>
+        <li><a href="web3.html">Tratamientos</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">Campaña antiestres</h2>
+      <img src="monutain_01.png" id="m1">
+      <img src="trees_02.png" id="t2">
+      <img src="monutain_02.png" id="m2">
+      <img src="trees_01.png" id="t1">
+      <img src="man.png" id="man">
+      <img src="plants.png" id="plants">
+    </section>
+    <section class="sec">
+      <h2>Que es el Estrés.</h2>
+      <p class="primer">El estrés es la respuesta física o mental a una causa externa, como tener muchas tareas o padecer 
+      una enfermedad. Un estresor o factor estresante puede ser algo que ocurre una sola vez o a corto plazo, 
+      o puede suceder repetidamente durante mucho tiempo <br><br>
+      El estrés es un sentimiento normal. Hay dos tipos principales de estrés:
+<br> <br>
+      Estrés agudo. Este es estrés a corto plazo que desaparece rápidamente. Puede sentirlo cuando presiona los frenos, pelea
+       con su pareja o esquía en una pendiente. Esto le ayuda a controlar las situaciones peligrosas. También ocurre cuando 
+       hace algo nuevo o emocionante. Todas las personas sienten estrés agudo en algún momento u otro.
+     <br> <br>
+      Estrés crónico. Este es el estrés que dura por un período de tiempo prolongado. Usted puede tener estrés crónico si tiene 
+      problemas de dinero, un matrimonio infeliz o problemas en el trabajo. Cualquier tipo de estrés que continúa por semanas o
+       meses es estrés crónico. Puede acostumbrarse tanto al estrés crónico que no se dé cuenta que es un problema. Si no encuentra
+        maneras de controlar el estrés, este podría causar problemas de salud.
+      <br><br>
+      Su cuerpo reacciona ante el estrés al liberar hormonas. Estas hormonas hacen que su cerebro esté más alerta, causar que sus músculos se tensionen y aumentar su pulso. A corto plazo, estas reacciones son buenas porque pueden ayudarle a manejar la situación que causa el estrés. Esta es la manera en que su cuerpo se protege a sí mismo.
+
+      Cuando tiene estrés crónico, su cuerpo se mantiene alerta incluso cuando no hay peligro. Con el tiempo, esto le pone en riesgo de problemas de salud, incluyendo:
+      <br><br>
+      Presión arterial alta <br>
+      Insuficiencia cardíaca <br>
+      Diabetes <br>
+      Obesidad <br>
+      Depresión o ansiedad <br>
+      Problemas de la piel, como acné o eczema <br>
+      Problemas menstruales <br><br>
+      Si usted ya tiene una condición de salud, el estrés crónico puede hacer que sea peor.
+    </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#m1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#m2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 50,
+      })
+      gsap.from("#t2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#t1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 50,
+      })
+      gsap.from("#man",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -250,
+      })
+      gsap.from("#plants",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 600,
+      })
+    </script>
+  </body>
+</html>

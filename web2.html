@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo 6 Campaña antiestres</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">ESTRÉS</a>
+      <ul class="navigation">
+        <li><a href="index.html" >Estrés</a></li>
+        <li><a href="web2.html" class="active">Causas del estrés</a></li>
+        <li><a href="web3.html">Tratamientos</a></li>
+      </ul>
+    </header>
+    <section class="parallax">
+      <h2 id="text">Campaña antiestres</h2>
+      <img src="monutain_01.png" id="m1">
+      <img src="trees_02.png" id="t2">
+      <img src="monutain_02.png" id="m2">
+      <img src="trees_01.png" id="t1">
+      <img src="man.png" id="man">
+      <img src="plants.png" id="plants">
+    </section>
+    <section class="sec">
+      <h2>Causas del estrés.</h2>
+      <p class="primer">Puede provenir de cualquier situación o pensamiento que lo haga sentir a uno frustrado, furioso o nervioso. 
+        El estrés es la reacción de su cuerpo a un desafío o demanda. En pequeños episodios el estrés puede ser positivo, como cuando 
+        le ayuda a evitar el peligro o cumplir con una fecha límite. <br><br>
+        1. Factores económicos. El dinero es necesario para vivir, así que si no se tienen suficientes ingresos, puede ser un gran quebradero de cabeza.
+        <br><br>
+        2. Sobrecarga de trabajo. Ante estas situaciones, lo mejor es hablar con tu superior. Y si eres el jefe, aprender a delegar.
+        <br><br>
+        3. Falta de satisfacción laboral. Sentirse cómodo en el trabajo y tener la oportunidad de hacer lo que te gusta es algo que cada vez menos empleados pueden hacer,
+         por desgracia.
+        <br><br>
+        4. Relaciones personales. Todos necesitamos sociabilizar, y cuando las cosas no salen bien con las personas de nuestro alrededor, es normal que nos afecte.
+        <br><br>
+        5. Atención a la familia. El primer núcleo con el que tenemos contacto en nuestra vida, normalmente suele acompañarnos hasta el final. Es normal querer atenderles
+         como es debido. Sobre todo cuando los abuelos o padres se hacen mayores y quieres recompensarles por todo lo que han hecho por ti.
+        <br><br>
+        6. Presión en vacaciones. Las vacaciones supuestamente son para disfrutar, pero mucha gente no se lo toma así. Es más, hay personas que sienten estrés por no 
+        estar trabajando. Otras simplemente se ponen nerviosas por salir de su “zona de confort”.
+        <br><br>
+        7. No decir nunca “no”. Grave error que puede traerte consecuencias. Aprender a decir “no” es mucho más importante de lo que algunos creen.
+        <br><br>
+        8. No tener tiempo libre. ¿Quién puede permitirse el lujo de no tener tiempo libre para disfrutar y no estar estresado? Muy necesario, o terminarás volviéndote 
+        loco.
+        <br><br>
+        9. Obsesionarse con la perfección. Es comprensible que existan personas que quieran que todo salga perfecto, el problema es que la perfección no existe. 
+        Si intentar lograrlo se convierte en una obsesión… Problema.
+        <br><br>
+        10. Falta de interés. Este síntoma normalmente afecta a personas que no encuentran nada que les motive. Por eso la búsqueda de nuestros sueños nunca debe cesar.
+        <br>
+        <br>
+        11. Desorden y confusión. Sentirse confundido es un sentimiento que todas las personas viven alguna vez, e incluso tener “desordenada” la cabeza es más común 
+        de lo que creemos. Lo que ocurre es que pocas personas lo comparten.
+    </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.from("#m1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 100,
+      })
+      gsap.from("#m2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        y: 50,
+      })
+      gsap.from("#t2",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#t1",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 50,
+      })
+      gsap.from("#man",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -250,
+      })
+      gsap.from("#plants",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: -50,
+      })
+      gsap.from("#text",{
+        scrollTrigger : {
+          scrub: true
+        },
+        x: 600,
+      })
+    </script>
+  </body>
+</html>
